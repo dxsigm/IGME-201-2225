@@ -22,14 +22,14 @@ Prerequisites: C- or better in IGME-102 or equivalent course and student standin
 
 ## Course Goals and Objectives
 At the end of this course, a student should be able to implement moderately large programming projects either individually and/or in a team. Specifically, a student should:
--       Demonstrate the ability to translate UI/UX requirements into working programs with an emphasis on usability and presentation.
--       Demonstrate the ability to construct and use linear data structures to design software solutions. Data structures include lists, stacks and queues.
--       Demonstrate the ability to design and implement software applications that use event-driven graphical user interfaces using Windows Forms.
--       Describe how exceptions work, explain their uses and employ them in their own designs.
--       Define inheritance and interface relationships and appropriately use design patterns in their own program designs.
--       Read and write files from within a software application.
--       Demonstrate the ability to construct multi-threaded programs that may run on multi-core computers.
--       Implement software applications that use basic networking protocols.
+- Demonstrate the ability to translate UI/UX requirements into working programs with an emphasis on usability and presentation.
+- Demonstrate the ability to construct and use linear data structures to design software solutions. Data structures include lists, stacks and queues.
+- Demonstrate the ability to design and implement software applications that use event-driven graphical user interfaces using Windows Forms.
+- Describe how exceptions work, explain their uses and employ them in their own designs.
+- Define inheritance and interface relationships and appropriately use design patterns in their own program designs.
+- Read and write files from within a software application.
+- Demonstrate the ability to construct multi-threaded programs that may run on multi-core computers.
+- Implement software applications that use basic networking protocols.
 
 We will assess all of this work with in-class exercises, homework, projects, and exams, as discussed below.
 
