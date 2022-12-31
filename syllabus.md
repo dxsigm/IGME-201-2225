@@ -11,12 +11,12 @@ Prerequisites: C- or better in IGME-102 or equivalent course and student standin
 - Professor David Schuh
 - Textbook: _Beginning C#_ by Karli Watson, et al.  PDF available for download in the Content section of myCourses.
 - Personal Zoom: https://rit.zoom.us/j/98466640253
-- Slack workspace: https://rit-qhhd.slack.com
+- Slack workspace: https://igme-201-01-2225.slack.com/
 - GitHub repo: https://github.com/dxsigm/IGME-201-2225
 - Email: dxsigm@rit.edu
 - Office hours: Wed 7-9pm on https://rit.zoom.us/j/98466640253 and anytime via Slack and myCourses "Help Dropbox" in Assignments
 - Class meeting Jan 17 - May 1:
-    - MWF 11AM - 11:50PM ET at TBD
+    - MWF 11AM - 11:50PM ET at https://rit.zoom.us/j/92311926525
     - Final Project Presentations: TBD
     - All lectures will be recorded and available via links which will be posted in the "Announcement" channel on Slack and myCourses
 
@@ -100,7 +100,7 @@ References for your curiosity:
 There are 30 homeworks, 3 unit tests, 1 final exam, a team project pitch, documentation submissions, presentations and team project submission. The first 2 units of the course are intended to make you proficient in C# procedural and object oriented programming, therefore there are approx 3 homeworks a week to give you plenty of practice.  Unit 3 focuses on Windows Forms Programming and the homeworks primarily are tutorials to give you UI/UX practice with the toolbox of controls you will need to implement your team project.  The homeworks become lighter as the semester progresses to give you more time to work with your team on the final project.  I am expecting you to apply yourself to the course material for at least 2 hours per 1 hour lecture.  While at college your job is to be a student, and that should be a full-time job of at least 40 hours per week across all of your courses.
 
 ### Extra Credit
-I do want everyone to earn A's!  Therefore there will be at least 5 extra credit assignments which can **each** add up to 5 points to your **final grade**.  But I only grant 5 points if they are done proficiently, with ample comments and well-designed structure.  These will be assigned as we learn the relevant material, and they are due approximately a week before the end of final exams.
+I do want everyone to earn A's!  Therefore there will be at least 5 extra credit assignments which can **each** add up to 5 points to your **final grade**.  But I only grant 5 points if they are done proficiently, with ample comments and well-designed structure.  They are due a week before the end of final exams.
 
 ### Policy on Incomplete Grades
 Incomplete grades will be given only in the most exceptional circumstances, solely for issues that arise AFTER the 'W' deadline has passed, and then only by prior arrangement with the professor. Being overcommitted, overwhelmed, and/or not having enough time to complete your coursework is not sufficient justification for an "I". Instead, meet with the professor as early as possible in the semester if you're having difficulty.
