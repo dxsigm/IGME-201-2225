@@ -1,0 +1,617 @@
+11:01:10  TypeWell transcript started.
+11:01:33 I see transcription is getting enabled.
+11:01:34   This is IGME-201-01: Interactive Design and Problem Solving 3
+Instructor: David Schuh 
+Wednesday, January 18, 2023
+Transcriber: DM
+11:01:37 's three.
+11:01:43   Hopefully you have all been in to the 
+11:01:46 course shell. 
+11:01:54 Everything is assigned and uploaded for 
+11:01:56 the semester.
+11:02:11 three.  Hopefully you have all been in to the course shell. 
+11:02:13 Everything is assigned and uploaded for the semester.
+11:02:15 I'm David 
+11:02:19 Schuh.
+11:02:25   I've been teaching this class for 3-4 
+11:02:26 years now.
+11:02:31   I have 30 years of programming experience.
+11:02:35   I have an electrical engineering 
+11:02:41 degree from the university of Rochester.
+11:02:47   A lot of real life experience.
+11:02:52   I hope to make it available to you to 
+11:02:56 improve your programming and 
+11:02:59 algorithmic problem solving skills. 
+11:03:19 I'm going to share my screen now. 
+11:03:36 Feel free to unmute and ask any 
+11:03:37 questions 
+11:03:38 . 
+11:04:03 You'll see our textbook is uploaded.
+11:04:04   It's out of print so I made it available.  This was written when C sharp was first available.
+11:04:06   About the year 2000. 
+11:04:15 When C sharp was first developed it was 
+11:04:20 intended to be cross platform.
+11:04:22   Macintosh,
+11:04:23  Windows,
+11:04:25  Linux,
+11:04:29  the goal was to have run time 
+11:04:33 platforms across all the platforms.
+11:04:38   You only had to write your source code once. 
+11:04:43 Only in the last year has that been a reality. 
+11:04:46 Windows Forms,
+11:04:48  which we'll use,
+11:04:57  allows us to use C sharp to write an application.
+11:05:02   It only works in Windows. 
+11:05:04 This is Maui,
+11:05:06  it's multi platform.
+11:05:09   It can develop for IOS,
+11:05:10  iPhone,
+11:05:13  Android,
+11:05:14  windows,
+11:05:15  Linux,
+11:05:20 .
+11:05:24   That came out about a year ago.
+11:05:30   It was kind of unstable at first.
+11:05:35   It has recently become more stable. 
+11:05:41 I hope we can do windows form 
+11:05:46 programming and conversion to Maui to 
+11:05:49 have experience with the latest technology. 
+11:05:57 Please install the .net development 
+11:06:00 environment and the Maui environment.
+11:06:08   I reference those check boxes you 
+11:06:14 need to enable when installing visual studio. 
+11:06:21 Everything is uploaded for my courses.
+11:06:27   I'll upload lecture code examples,
+11:06:30  homework answers,
+11:06:34  all the information we need for the course. 
+11:06:38 We have weekly content.
+11:06:43   Week 1 there is 22 documents and 
+11:06:47 links that you should review this week.
+11:06:50   That gives supplemental information. 
+11:06:58 I'll do coding examples in classes 
+11:07:03 but I can't describe everything.
+11:07:07   These links supplement the textbook 
+11:07:12 and explain coding standards I expect.
+11:07:17   And a lot of typical references.
+11:07:21   Please review the weekly content 
+11:07:24 and 
+11:07:29 before each class. 
+11:07:34 There's also a team project you'll be 
+11:07:37 working on this semester.
+11:07:40   There's a lot of information up here 
+11:07:41 with examples. 
+11:07:46 I expect good documentation.
+11:07:49   I have uploaded an example.
+11:07:53   There's a document to explain the 
+11:07:59 team project and give some examples of 
+11:08:03 projects from previous semesters. 
+11:08:11 Everything is scheduled on our calendar.
+11:08:19   If I click on the list option every 
+11:08:23 homework and exam has been assigned. 
+11:08:28 The whole structure of the class is 
+11:08:30 available now.
+11:08:34   You can start to dive in and look at 
+11:08:35 what's expected.
+11:08:39   Review the upcoming homework.
+11:08:42   Make sure you understand.
+11:08:46   Reach out to me anytime with 
+11:08:48 questions if anything is not clear. 
+11:08:51 Let's go to the syllabus. 
+11:08:57 You have seen our first announcement.
+11:09:00   It has my office hours.
+11:09:09 We have a work space in Slack that I 
+11:09:13 think you're all subscribed to. 
+11:09:20 We have a course get repository.
+11:09:27   We're using My Courses for class announcements.
+11:09:32   I'll post an announcement after every 
+11:09:36 class giving a summary of what we covered,
+11:09:38  homework due,
+11:09:52  and a link to the recording of class. 
+11:10:07 Install visual studio C sharp 2.
+11:10:18 There's a check box you need to select when 
+11:10:20 doing so.
+11:10:22   Also the .net 
+11:10:27 development UI module,
+11:10:36  this Maui module I want to play with. 
+11:10:41 Two monitors would be ideal.
+11:10:48   Because we are doing windows form 
+11:11:07 development you need access to a 
+11:11:08 Windows operating system.
+11:11:10   if You Have a mac There's an App 
+11:11:11 Called Bootcamp
+11:11:13 If you have a Mac there's an app called 
+11:11:15 bootcamp that you can use.
+11:11:20   That's crucial to the course 
+11:11:26 Let's jump to the syllabus.
+11:11:31   Hopefully you have been reviewing that. 
+11:11:38 You can read the course goals and objectives. 
+11:11:41 We have 4 units.
+11:11:43   First unit 
+11:11:47 we cover C
+11:11:51 +,
+11:11:54  Syntx and programming. 
+11:12:04 There's an in class pitch.
+11:12:07   You'll present with your team.
+11:12:10   I'll give you feedback,
+11:12:14  the rest of the class can ask questions.
+11:12:18   It will help you hone the scope of 
+11:12:19 your project. 
+11:12:28 Unit 2 is covered through weeks 4-6.
+11:12:32   That's object oriented programming.
+11:12:35   There are 
+11:12:59 Unit 3 will focus on Windows form programming.
+11:13:05   There's documentation I have developed.
+11:13:10   There are tutorials you will code 
+11:13:11 along with. 
+11:13:18 Unit 4 covers data structures.
+11:13:24   For that we have PDF and Powerpoint documents. 
+11:13:29 Along the way there will be team 
+11:13:37 project document revisions.
+11:13:42   Documentation is important.
+11:13:47   It must detail the scope of the project,
+11:13:49  mockups,
+11:13:51  color palettes,
+11:13:58  how you expect your UI to look and function. 
+11:14:25   I need to know what each student is working on in the project.  It helps me to grade you fairly. 
+11:14:30 ho is doing what I can Girardeau fortunately. 
+11:14:35 grade you fairly. 
+11:14:39 The final e
+11:14:47 presentation will be during exams week. 
+11:14:51 We have a slack work space.
+11:14:57   I expect you to attend each lecture.
+11:15:01   With Covid I understand that's still 
+11:15:03 expecting our health.
+11:15:07   Accommodation will be given for that. 
+11:15:10 Grading,
+11:15:16  general layout.
+11:15:23   I will apply pluses and minuses to A,
+11:15:26  B,
+11:15:27  C,
+11:15:29  etc.
+11:15:52 
+There are three unit test exams and a final exam.  There are 30 homework assignment, each is worth 1% of the grade. 
+11:15:54 Attendance,
+11:15:55  participation,
+11:16:00  that's 5% of your grade.
+11:16:07   Your engagement over Slack,
+11:16:13  I have a help Dropbox where you can 
+11:16:18 submit any material you want me to review.
+11:16:24   I'll review it and give you feedback 
+11:16:25 and help. 
+11:16:31 I can consider that engagement as part 
+11:16:34 of your attendance grade.
+11:16:41 Because there are 30 homeworks and 8 
+11:16:46 students in the class I invite you to 
+11:16:49 self grade your homework.
+11:17:13   It helps you with learning and 
+11:17:14 assessment of your progress. 
+11:17:15 I'll provide a rubric, you will assess your grade against that.
+11:17:17   I ask you to grade yourself fairly. 
+11:17:23 I only adjust grades upwards.
+11:17:29   I won't say you didn't deserve an 80.
+11:17:50   But if I think you were too hard on 
+11:17:51 yourself I'll adjust your grade upwards.  
+There are references about self grading for why it's been useful. 
+11:17:52 Pacing of the class.
+11:17:54   There are 
+11:18:06 , that's all listed here.
+11:18:32 make you proficient in C+ and object oriented programming. 
+11:18:33 You will only learn to program in C+ if you practice and have exposure to it. 
+11:18:41 Unit 3 focuses on Windows Form programming.
+11:18:43   Those are primarily 
+11:18:46 to 
+11:18:51 give you practice with the toolbox. 
+11:18:53 The 
+11:19:01 assignments get lighter as the semester 
+11:19:07 progresses so your team can work on the 
+11:19:08 team project. 
+11:19:12 Your job right now is to work full time 
+11:19:14 at being a student.
+11:19:19   That means at least 40 hours a week 
+11:19:44   I expect you to work two hours out of class for every hour of class. 
+11:19:45 I want you all to get A's.  I do provide extra credit options.
+11:19:50   They are due the week before the end 
+11:19:55 of finals but you can submit them 
+11:19:57 anytime the semester.
+11:20:01   You can only submit them once.
+11:20:04   I won't give much help with them. 
+11:20:09 You can ask questions about them but I 
+11:20:10 will be 
+11:20:20 restrained from giving too much 
+11:20:22 information because they are extra credit. 
+11:20:31 Incompletes are Aonly given in the most 
+11:20:34 extreme circumstance.
+11:20:40   Procrastination is not a reason for 
+11:20:42 an incomplete. 
+11:20:44 The RIT 
+11:20:48 deadlines are here.
+11:20:54   The syllabus can be subject to change.
+11:20:59   I will announce changes and they will 
+11:21:01 be visible here. 
+11:21:04 That's the outline of the class. 
+11:21:21 In my courses,
+11:21:22  the assignment section, all the assignments are assigned with their due dates. 
+11:21:27 Here's the help drobbox.
+11:21:31   You can submit anything you need me 
+11:21:33 to review. 
+11:21:52 The unit tests are available.
+11:21:53   The due dates are assigned.
+11:21:54   The final project, the pitch is due week 4.  By Friday I will assign you to a team.
+11:21:56   I will randomly create the teams. 
+11:22:02 If you have a have problem with who you 
+11:22:07 are paired with let me know and we can 
+11:22:09 make changes. 
+11:22:14 By Friday you will have the team makeup. 
+11:22:35 All of the exams are take home.
+11:22:37   They are to be done individually.
+11:22:38   Academic honesty and honor system is expected.  They are open book, open internet.
+11:22:40   You can use stack overflow,
+11:22:47  any resource you like to work on any 
+11:22:48 homeworks or exams.
+11:22:53   What I'm expecting though is well 
+11:22:54 documented code.
+11:22:59   I expect a comment for almost each line.
+11:23:25 explain what a method is doing.  What the purpose of a class is.  
+Any resource you can access apart from working with another student is okay. 
+11:23:36 The cadence is about three homeworks a week.
+11:23:38   They go in line with the content of 
+11:23:40 the textbook.
+11:23:53   Until we get to Windows forms. 
+11:23:54 These homeworks 21-27 are tutorials that you 
+11:23:56 work along with.
+11:24:04   Then we get in to the data structures 
+11:24:09 part of the classes with the last 3 homeworks. 
+11:24:12 Any questions? 
+11:24:32 I expect you to have your own 
+11:24:34 repository in GitHub.
+11:24:38   You'll be submitting links
+11:24:44 .  You won't be submitting the finals,
+11:24:46  just the web link. 
+11:24:53 If you don't have one yet go to 
+11:24:56 GitHub.com and create an account.
+11:25:02   I have an account using my RIT email.
+11:25:06   And then you need to create a new repository. 
+11:25:23 On your home screen there's a "new" button.
+11:25:26   Create "My IGME-201."
+11:25:30   That's what I want you to call your 
+11:25:33 repository.
+11:25:36   Make it public.
+11:25:40   Check the box for "ReadMe."
+11:25:42   This is important.
+11:25:54 If you skip that step you'll have problems.
+11:26:01 Add A 
+11:26:02 ReadMe."  This is important.  If you skip that step you'll have problems. 
+11:26:05 Ignore 
+11:26:12 Nor template.
+11:26:15   chc
+11:26:21 Click visual studio.
+11:26:33   We just want the source code.
+11:26:36   We don't need to worry about a license.
+11:26:42   Now we can create a repository. 
+11:26:46 Student:  What should it be named? 
+11:26:48 Professor: 
+11:26:57 _My IGME-201. 
+11:27:11 After creating it you'll be taken to 
+11:27:13 your repository.
+11:27:38   Now we need to clone the repository 
+11:27:44 to our computer via Visual Studio.
+11:27:48   Go ahead and run Visual Studio. 
+11:27:59 Visual Studio has a get 
+11:28:01 venue option.
+11:28:02   Here's the 
+11:28:10 Let's continue without code.
+11:28:18   That takes us to the empty IDE of 
+11:28:42   It's the Integrated Design Environment I think. 
+11:28:44 The IDE is where we'll work for most of our projects.  You'll notice when opening without a project you just [Inaudible.] 
+11:28:50 We want to clone the new repository we 
+11:28:51 just created.
+11:28:56   That means it copies the repository 
+11:29:00 down to your local hard drive.
+11:29:06   Keep a link from your local hard 
+11:29:09 drive to your web repository. 
+11:29:19 We want to browse our GitHub account.
+11:29:21   Click on GitHub.
+11:29:35   You need to click on this drop down 
+11:29:42 and add your GitHub account here.
+11:29:48   When you do that it will take you to 
+11:29:49 GitHub to log in.
+11:29:54   Since I'm logged in already it's 
+11:29:55 using my existing log in. 
+11:30:02 That's the first step to add your account.
+11:30:16   After you do that it shows your user 
+11:30:18 name and all the repositories created under your account. 
+11:30:21 I just created this account,
+11:30:23  that's the one I want to clone.
+11:30:26   In the local path,
+11:30:43  this is where it 
+11:30:44 is going to clone my repo 2.  I did it earlier. 
+11:30:45 Here's where you select which folder you 
+11:30:47 want it to clone to.
+11:30:53   I'm going to pick a different folder 
+11:30:57 so it will clone to a new location. 
+11:31:02 The path you enter for it to clone to 
+11:31:06 will include the name of the repo.
+11:31:12   The end of your path should include 
+11:31:15 your name.
+11:31:20   It will create a new folder in that 
+11:31:25 location and download all the files 
+11:31:31 from the location to that folder. 
+11:31:33 a
+11:32:25 I put it in my source resource folder.
+11:32:29 made there's a green check mark. 
+11:32:32 You see it 
+11:32:40 what is in there.
+11:32:44   And there are hidden folders.
+11:32:49   They are working folders for Git to 
+11:32:50 do its job. 
+11:32:56 We'll create our first project.
+11:33:09   You need to create every project for 
+11:33:11 this class in this folder.
+11:33:12   That means you can check your work in 
+11:33:15 to the repository on the web.
+11:33:20   As you work on your team project 
+11:33:23 you'll want to share your repo with 
+11:33:24 your teammates. 
+11:33:32 I'm going to close my other open windows.
+11:33:37   We're going to start creating a new 
+11:33:38 project in Visual Studio. 
+11:33:42 We'll crting
+11:33:50 reate a new project.
+11:33:55   I need to select a template.
+11:34:08   This development environment is 
+11:34:11 different than ones you have used before. 
+11:34:18 I know in 101 and 102 you did 
+11:34:23 Javascript programming using Chrome and 
+11:34:26 the development s
+11:34:29 tudio.
+11:34:35   Javascript is an interpreted language,
+11:34:37  it's parsed.
+11:34:43   You write your code in Java
+11:34:46 , in that language,
+11:34:47  and the 
+11:34:51 that code is run as is. 
+11:35:00 You don't have to go through a step to 
+11:35:03 create a binary that you run.
+11:35:17 With C+ we need write our code then 
+11:35:18 compile it.
+11:35:28   It creates binary codes that can only 
+11:35:31 be run in the environment they were compiled for. 
+11:35:35 We're create console applications that 
+11:35:40 run with the .net framework.
+11:35:45   They can only run on Windows or a doc prompt. 
+11:35:53 If you're on a Mac you can write 
+11:35:58 console applications that will run on 
+11:35:59 the Mac.
+11:36:01   I would rather you use 
+11:36:23 Bootcamp and Windows on your Mac so we 
+11:36:25 can all develop our code using the same tools. 
+11:36:26 The Macintosh Visual Studio environment is a little different than what you will see in the lecture. 
+11:36:35 If you're on the Mac and having 
+11:36:36 problems reach out.
+11:36:38   I know the Mac application is a bit 
+11:36:43 different template than the Windows environment. 
+11:36:50 We want to make sure we choose the 
+11:37:03 templet with .net framework in the name.
+11:37:06 For the first unit of the class we are 
+11:37:10 only creating console applications.
+11:37:15   It needs to say console app .net framework. 
+11:37:20 You see the targets it creates.
+11:37:26   You have other options.
+11:37:33   This uses Visual Basic,
+11:37:36  this uses F+,
+11:37:39  we're not using either in this class. 
+11:37:44 We will give it a project name.
+11:37:53   We are creating an application that 
+11:37:58 asks users for their favorite color and number.
+11:38:03   It will write out their favorite 
+11:38:06 color a number of times. 
+11:38:16 We want to put in our MyIGE local 
+11:38:36 repository folder so any work we do can 
+11:38:37 be checked in to our GitHub repo. 
+11:38:39 We want the solution to match our project name.
+11:38:40   We want our framework to stay the same.
+11:38:43   It's easier to manage if we place the 
+11:38:47 solution and project in the same directory.
+11:38:51   It creates a solution and project file. 
+11:38:55 The solution contains the project.
+11:38:59   It's easier to manage if you check 
+11:39:01 that box. 
+11:39:05 I click 
+11:39:12 "create."
+11:39:14   It's doing its thing.
+11:39:16   It will come up with a template for 
+11:39:22 us with some code already written. 
+11:39:37 There we are.
+11:39:42   Our IDE would be more useful if we 
+11:39:50 could see how our project is defined.
+11:39:52   We can do that by clicking the view 
+11:39:54 menu and
+11:40:08 .  We can click solution and then view 
+11:40:11 the projects in the solution.
+11:40:17 In the project it has all the source 
+11:40:20 files that compile the project.
+11:40:26   We have one called "program cs."
+11:40:31   That contains all of our program 
+11:40:34 instructions or what we want our program to do. 
+11:40:38 Notice 
+11:40:43 it writes some code for us.
+11:40:51   First it creates a name space.
+11:40:57   In C+ that's a container that 
+11:41:04 provides the material and classes that 
+11:41:06 belong together. 
+11:41:09 We have a name space that defaults to 
+11:41:11 the name of our project.
+11:41:15   Everything we want to do related to 
+11:41:22 our favorite color and number could 
+11:41:24 belong in that name space.
+11:41:27   It's a way to organize our code. 
+11:41:33 We can have multiple name spaces in a project.
+11:41:36   They can reference each other.
+11:41:39   They are like containers.
+11:41:42   They give the context for the code we write. 
+11:41:50 We are already exposed to object 
+11:41:51 oriented coding.
+11:41:56   It creates a class by default and 
+11:41:57 must be three.
+11:41:59 ere.
+11:42:04   Everything we write must be contained 
+11:42:08 in at least one class. 
+11:42:14 We'll talk more about it but know that 
+11:42:19 everything we write is contained in a class.
+11:42:24   That's because of how .net framework works.
+11:42:27   It's all object oriented,
+11:42:29  object based.
+11:42:36 Therefore the class is an integral part 
+11:42:38 of 
+11:42:40 C+.
+11:42:44   Because we are not creating any 
+11:42:50 classes in unit 1 I would like you to 
+11:42:56 add the word "static" in front of any 
+11:43:00 class that is automatically written for 
+11:43:01 you by Visual Studio.
+11:43:06   That will save you a lot of pain. 
+11:43:19 Just by adding the word "static" in front of 
+11:43:21 the class Visual Studio creates for us 
+11:43:24 will prevent you from causing problems. 
+11:43:29 Static means we cannot create that 
+11:43:31 class object.
+11:43:36   Static forces you to write code in 
+11:43:41 the class that is guaranteed to work. 
+11:43:46 If we leave the word static out you can 
+11:43:51 end up writing code that looks correct 
+11:43:56 and Visual Studio tells you no issues 
+11:43:57 are found,
+11:44:07  but your code may not run. 
+11:44:11 You want to add that static keywork. 
+11:44:15 Coding standards,
+11:44:23  I expect for every class in your code 
+11:44:24 you have a comment block.
+11:44:30   How I want the comment block to look 
+11:44:38 is detailed in the standards document 
+11:44:41 in "My Courses." 
+11:44:45 I want the class name,
+11:44:47  who created the class,
+11:44:51  what it's purpose is and 
+11:45:07 .  The purpose here is a console 
+11:45:09 rewrite application.
+11:45:13   Not only does it get the favorite 
+11:45:15 color and number,
+11:45:20  there are many concepts we'll get with 
+11:45:21 this application. 
+11:45:26 Single line comments can start with 2 
+11:45:28 or 3 slashes.
+11:45:33   If you want a multi line comment you 
+11:45:37 can use slash star.
+11:45:40   This a multi line comment.
+11:45:46 You 
+11:45:51 can enclose multiple lines of comments 
+11:45:53 in this 
+11:45:58 */ syntax. 
+11:46:04 Every class this semester I'll live 
+11:46:07 share the session.
+11:46:10   If any of you are running Visual 
+11:46:16 Studio now you can join this live share session. 
+11:46:22 I have created a link.
+11:46:27   When I create the live share session 
+11:46:33 I'll paste the link to the general 
+11:46:40 channel of our slackshare space.
+11:46:44   If you click this link you should be 
+11:46:47 able to join this Visual Studio session 
+11:46:51 and we can write code together.
+11:46:55   We can collaborate. 
+11:47:15 See if you can join that.
+11:47:16   While you do that,
+11:47:18  awesome.
+11:47:19   You'll see you can type.
+11:47:25   Just make sure to remove what you type,
+11:47:27  we don't want to create bugs. 
+11:47:35 For Slack,
+11:47:36  I'll post these 
+11:47:42 for 
+11:47:48 live share links.
+11:47:53   After every class I'll post an announcement.
+11:47:58   It will be in My Courses and the 
+11:48:16 announcements class channel in Slack. 
+11:48:17 This is an example from last semester.  I provide a link to the day's lecture.  I'll have any instructions on what we covered.
+11:48:23   There will be a summary of what we covered.
+11:48:29   Anything I'm expecting,
+11:48:31  assignments. 
+11:48:39 Every class I'll post an announcement.
+11:48:43   It will summarize what we covered,
+11:48:46  give the links to what you need. 
+11:48:59 Another important link is the GitHub repo.
+11:49:05   I will provide this link,
+11:49:11  it has all the example code from the textbook. 
+11:49:15 If we look at chapter 3,
+11:49:22  here are two example exercises that 
+11:49:25 are talked about in the book.
+11:49:28   As you read the textbook you should 
+11:49:31 be going to the chapters in the repo,
+11:49:35  pulling down the code and reviewing it. 
+11:49:43 Every week and every session has a 
+11:49:45 folder in the repo.
+11:49:53   Week 1,
+11:49:54  session 1,
+11:49:56  this has any code or files we have worked on 
+11:49:57 in today's lecture. 
+11:50:04 I'd like you to 
+11:50:10 after every class go to the repo page,
+11:50:15  click on this green button and 
+11:50:18 download a zip of the whole repo.
+11:50:24   Unzip it to your hard drive so you 
+11:50:28 have the latest version of the repo. 
+11:50:31 Use the zip option,
+11:50:33  not the 
+11:50:38 don't download the 
+11:50:42 repo.
+11:50:46   If you are linked to my code and make 
+11:50:51 changes that will cause conflicts and ma
+11:50:55 link to 
+11:50:57 the repo.  If you are linked to my code and make changes that will cause conflicts 
+11:50:59 and make it difficult.
+11:51:06   So download a zip of the repo.
+11:51:12   You can keep abreast of what we have 
+11:51:14 worked on in lecture,
+11:51:15  you have the code. 
+11:51:21 Use the download button,
+11:51:24  select zip.
+11:51:25   You can keep that current. 
+11:51:44 It's 11:51.
+11:51:45   We have a good start.
+11:51:46   Reach out to me on the questions channel in our Slack,
+11:51:48  you can email me,
+11:51:52  you can post to the help Dropbox.
+11:51:54   I'm available.
+11:51:58   I should be able to reply to any 
+11:52:01 question within a couple hours.
+11:52:02   I'm always online. 
+11:52:08 I do a have a full time job as well.
+11:52:14   I work for the ticketing division of 
+11:52:17 Major League baseball.
+11:52:22   I'm always online and have access to Slack. 
+11:52:28 I think we have covered enough for today.
+11:52:32   I'll post an announcement when the 
+11:52:34 video for 
+11:52:36 the class is posted. 
+11:52:40 We have created this new project,
+11:52:51  to check it in go to 
+11:52:52 view menu,
+11:52:53  get changes.
+11:52:59   It lists everything we have changed 
+11:53:01 in our repo.
+11:53:03   We have 
+11:53:12 Make sure you select the third option 
+11:53:14 from the dropdown.
+11:53:17   Commit all and sync.
+11:53:25 There are two steps when using Git.
+11:53:31   You commit to your local repository 
+11:53:37 and push from local repository up to 
+11:53:39 the remote repo.
+11:53:41   That third option,
+11:53:46  commit all and sync does the two steps 
+11:53:47 for you.
+11:54:15 
+It tells you it successfully synchronized.  If we refresh we can see our favorite color and number project is now checked in. 
+11:54:23 Enjoy your first week back to school. 
+11:54:30 [End of class.] 
+11:54:34 *** TypeWell transcription provides a meaning-for-meaning representation of spoken conversation to facilitate real-time communication access. This rough-edited copy is provided for reference and is not a verbatim record of the proceedings.
