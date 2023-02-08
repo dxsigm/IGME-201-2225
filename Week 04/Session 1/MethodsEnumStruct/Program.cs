@@ -175,6 +175,8 @@ namespace MethodsEnumStruct
                 StudentStruct maxStudent = new StudentStruct("Max Lama");
                 StudentStruct maxGStudent = new StudentStruct("Max Lama", 3.5);
                 maxStudent.dGrade = 3.5;
+                maxStudent.PCollegeYear = CollegeYear.senior;
+                maxStudent.SelfRefProperty = 42;
 
             }
 
