@@ -35,6 +35,8 @@ namespace MemoryGame
             Random rand = new Random();
             Console.Clear();
 
+            MyMethod();
+
             while (!bTimeOut)
             {
                 displayString += (char)('A' + rand.Next(0, 26));
@@ -79,6 +81,11 @@ namespace MemoryGame
 
             goto start;
 
+        }
+
+        static void MyMethod()
+        {
+            Console.WriteLine("in my method");
         }
 
         static void TimesUp(object sender, ElapsedEventArgs e)
