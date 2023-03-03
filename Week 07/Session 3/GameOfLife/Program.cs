@@ -304,34 +304,54 @@ static internal class Program
             }
         }
 
+        // since we will use Unicode characters, set the console to display Unicode
         Console.OutputEncoding = System.Text.Encoding.Unicode;
 
+        // assign a delegate method to handle when CTRL+C is pressed
+        // in order to exit our infinite game loop
         Console.CancelKeyPress += new ConsoleCancelEventHandler(ConsoleCancel);
 
-        while( !bExit)
+        while (!bExit)
         {
+            // print the current state of the organism
             PrintOrganism(organism, MAX_ROWS, MAX_COLS);
 
+            // calculate the next state of every cell based on the current state of every cell
             CalculateNextGeneration(organism[0, 0]);
 
+            // sleep for 100 milliseconds between each generation
             System.Threading.Thread.Sleep(100);
         }
     }
 
+    // recursive method to calculate the next state of every cell based on the current state of all neighbors
     public static void CalculateNextGeneration(Cell thisCell)
     {
+        // base case is if we reached thisCell.nextCell == null
         if (thisCell != null)
         {
+            // calculate the next state for the current cell
             thisCell.SetNextState();
 
+            // recurse through the whole linked list of thisCell.nextCell (moves through all cells to the "right")
+            // every time we recurse into our method we go down one rung of a ladder into a hole
+            // and each rung needs to retain the data stored in thisCell to be remembered when we climb back up the ladder
             CalculateNextGeneration(thisCell.nextCell);
 
+            // all next states have been calculated for the organism
+            // now we can start climbing back up the ladder and updating the current state of each cell to the next state
+
+            // unfold the calling stack for every cell
+            // and set the current state = the next state 
+            // (these are structures, so they can be copied by value)
             thisCell.currentCellState = thisCell.nextCellState;
         }
     }
 
+
     public static void ConsoleCancel(object sender, ConsoleCancelEventArgs e)
     {
+        // CTRL+C sets bExit = true
         bExit = true;
     }
 
