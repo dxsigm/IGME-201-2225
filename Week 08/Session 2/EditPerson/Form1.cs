@@ -14,9 +14,17 @@ namespace EditPerson
     {
         public EditPersonForm()
         {
+            /******************************************************************************************
+             **************THIS MUST BE THE FIRST FUNCTION CALL IN YOUR FORM CONSTRUCTOR **************
+             ******************************************************************************************/
             InitializeComponent();
 
-            foreach(Control control in this.Controls)
+
+            // initialize field properties and associate all delegate method event handlers first
+
+            this.Load += new EventHandler(EditPersonForm__Load);
+
+            foreach (Control control in this.Controls)
             {
                 // use Tag property to indicate valid state
                 control.Tag = false;
@@ -30,8 +38,6 @@ namespace EditPerson
             this.licTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
             this.specTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
             this.gpaTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
-
-            this.Load += new EventHandler(EditPersonForm__Load);
         }
 
         private void TxtBoxEmpty__Validating(object sender, CancelEventArgs e)
