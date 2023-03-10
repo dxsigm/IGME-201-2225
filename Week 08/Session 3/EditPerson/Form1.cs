@@ -38,7 +38,36 @@ namespace EditPerson
             this.licTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
             this.specTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
             this.gpaTextBox.Validating += new CancelEventHandler(TxtBoxEmpty__Validating);
+
+            // we could do this, but then we do not see the method signature for the delegate method
+            //this.gpaTextBox.Validating += TxtBoxEmpty__Validating;
+
+            this.nameTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
+            this.emailTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
+            this.ageTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
+            this.licTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
+            this.specTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
+            this.gpaTextBox.TextChanged += new EventHandler(TxtBoxEmpty__TextChanged);
         }
+
+        private void TxtBoxEmpty__TextChanged(object sender, EventArgs e )
+        {
+            TextBox tb = (TextBox)sender;
+
+            if (tb.Text.Length == 0)
+            {
+                this.errorProvider1.SetError(tb, "This field cannot be empty.");
+                tb.Tag = false;
+            }
+            else
+            {
+                this.errorProvider1.SetError(tb, null);
+                tb.Tag = true;
+            }
+
+            ValidateAll();
+        }
+
 
         private void TxtBoxEmpty__Validating(object sender, CancelEventArgs e)
         {
@@ -56,6 +85,18 @@ namespace EditPerson
                 e.Cancel = false;
                 tb.Tag = true;
             }
+
+            ValidateAll();
+        }
+
+        private void ValidateAll()
+        {
+            this.okButton.Enabled =
+                (bool)this.nameTextBox.Tag &&
+                (bool)this.emailTextBox.Tag &&
+                (bool)this.ageTextBox.Tag &&
+                (bool)this.specTextBox.Tag &&
+                (bool)this.gpaTextBox.Tag;
         }
 
         private void EditPersonForm__Load(object sender, EventArgs e)
@@ -74,6 +115,11 @@ namespace EditPerson
         }
 
         private void okButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
         {
 
         }
