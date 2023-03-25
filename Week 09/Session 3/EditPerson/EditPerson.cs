@@ -57,6 +57,8 @@ namespace EditPerson
             this.typeComboBox.SelectedIndexChanged += new EventHandler(TypeComboBox__SelectedIndexChanged);
 
             this.cancelButton.Click += new EventHandler(CancelButton__Click);
+
+            this.Show();
         }
 
         private void CancelButton__Click(object sender, EventArgs e)
