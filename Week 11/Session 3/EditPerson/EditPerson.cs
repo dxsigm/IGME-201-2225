@@ -223,23 +223,22 @@ namespace EditPerson
                             htmlId = "A";
                             break;
                     }
-                }
 
-                htmlId += $"{course.schedule.startTime:HH}";
+                    htmlId += $"{course.schedule.startTime:HH}";
 
-                htmlElement = wb.Document.GetElementById(htmlId);
+                    htmlElement = wb.Document.GetElementById(htmlId);
 
-                if( htmlElement != null)
-                {
-                    htmlElement.InnerText = course.courseCode;
-                    htmlElement.Style += "background-color: red;";
+                    if (htmlElement != null)
+                    {
+                        htmlElement.InnerText = course.courseCode;
+                        htmlElement.Style += "background-color: red;";
 
-                    htmlElement.MouseOver += new HtmlElementEventHandler(HtmlElement__MouseOver);
-                    htmlElement.MouseDown += new HtmlElementEventHandler(HtmlElement__MouseDown);
+                        htmlElement.MouseOver += new HtmlElementEventHandler(HtmlElement__MouseOver);
+                        //htmlElement.SetAttribute("title", $"Description: {course.description}\nReview: {course.review}");
+                        htmlElement.MouseDown += new HtmlElementEventHandler(HtmlElement__MouseDown);
+                    }
                 }
             }
-
-
         }
 
         private void HtmlElement__MouseDown(object sender, HtmlElementEventArgs e)
