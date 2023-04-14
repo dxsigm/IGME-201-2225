@@ -747,16 +747,19 @@ namespace EditPerson
                     student.eCollegeYear = collegeYear.senior;
                 }
 
-                ICourseList courseList = (ICourseList)formPerson;
-
-                student.CourseList = courseList.CourseList;
+                if( formPerson is ICourseList iCourseList)
+                {
+                    student.CourseList = iCourseList.CourseList;
+                }
             }
             else
             {
                 teacher.specialty = this.specTextBox.Text;
 
-                ICourseList courseList = (ICourseList)formPerson;
-                teacher.CourseList = courseList.CourseList;
+                if (formPerson is ICourseList iCourseList)
+                {
+                    teacher.CourseList = iCourseList.CourseList;
+                }
             }
 
 
