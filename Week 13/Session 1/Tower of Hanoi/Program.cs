@@ -108,7 +108,7 @@ namespace Tower_of_Hanoi
             }
 
             // first called with from = "A", spare = "C", to = "B"
-            // to move the blocks from A to B
+            // to move the blocks from A to B using C as the spare
             GameSolver(nBlocks - 1, from, to, spare);
 
             moves[0] = from;
@@ -116,7 +116,7 @@ namespace Tower_of_Hanoi
             autoMoves.Enqueue(moves);
 
             // first called with from = "B", spare = "A", to = "C"
-            // to move the blocks from B to C
+            // to move the blocks from B to C using A as the spare
             GameSolver(nBlocks - 1, spare, from, to);
         }
 
