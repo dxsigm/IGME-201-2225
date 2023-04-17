@@ -8,8 +8,12 @@ namespace Tower_of_Hanoi
 {
     internal static class Program
     {
+        // the posts which can be accessed via "A", "B" and "C"
+        // and each post is a stack (a last-in, first-out list)
         static Dictionary<string, Stack<int>> post = new Dictionary<string, Stack<int>>();
 
+        // Queue of sequential moves to solve the game
+        // a first-in, first-out list
         static Queue<string[]> autoMoves = new Queue<string[]>();
 
         static int nTurn = 0;
@@ -18,6 +22,7 @@ namespace Tower_of_Hanoi
         {
             int nBlocks = 0;
 
+            // each post is a stack of sized blocks
             post["A"] = new Stack<int>();
             post["B"] = new Stack<int>();
             post["C"] = new Stack<int>();
@@ -30,6 +35,7 @@ namespace Tower_of_Hanoi
             Console.Write("Autosolve (Y/N): ");
             string autoSolve = Console.ReadLine();
 
+            // Push() adds to the top of a stack
             post["A"].Push(nBlocks + 1);
 
             int nCntr = nBlocks;
@@ -59,6 +65,7 @@ namespace Tower_of_Hanoi
                 tryAgain:
                 if (autoSolve.ToLower().StartsWith("y"))
                 {
+                    // Dequeue() returns and removes the first item in the queue (the first item added)
                     string[] sMoves = autoMoves.Dequeue();
                     srcPost = sMoves[0];
                     destPost = sMoves[1];
@@ -72,18 +79,21 @@ namespace Tower_of_Hanoi
                     destPost = Console.ReadLine().ToUpper();
                 }
 
+                // Count is how many items on the stack (can also be used for Queues)
                 if (post[srcPost].Count == 1)
                 {
                     Console.WriteLine("There are no blocks on post " + srcPost);
                     goto tryAgain;
                 }
 
+                // Peek() returns the top stack item, but does not remove it
                 if (post[srcPost].Peek() > post[destPost].Peek())
                 {
                     Console.WriteLine("You may not place a larger block on a smaller block!");
                     goto tryAgain;
                 }
 
+                // Pop() returns and removes the top stack item (the last item added to the stack)
                 nThisBlock = post[srcPost].Pop();
                 post[destPost].Push(nThisBlock);
             }
@@ -103,6 +113,7 @@ namespace Tower_of_Hanoi
                 // move the block to the target post
                 moves[0] = from;
                 moves[1] = to;
+                // Enqueue() adds an item to the end of the queue
                 autoMoves.Enqueue(moves);
                 return;
             }
