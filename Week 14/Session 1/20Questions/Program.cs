@@ -6,9 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 
 using Newtonsoft.Json;
+
+// you must manually add the System.Web assembly as a reference to use the System.Web namespace
+using System.Web;
 
 
 namespace _20Questions
@@ -46,6 +48,8 @@ namespace _20Questions
             }
             else
             {
+                // base case is when we reach a leaf, which are the objects in our tree
+                // noNode and yesNode will be null
                 OnQueryObject();
             }
         }
