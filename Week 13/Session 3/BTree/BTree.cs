@@ -193,6 +193,9 @@ namespace BTree
             // with 7 optimally distributed data points (setting isData = false) 
             // then insert 30 random numbers between 1 and 51
 
+            // 26 13 39 6 19 32 45
+            // 6 13 19 26 32 39 45 
+
             BTree root = null;
             BTree node;
             Random random = new Random();
@@ -201,7 +204,14 @@ namespace BTree
 
 
             // Your code here
-
+            node = new BTree(26, root, false);
+            root = node;
+            node = new BTree(13, root, false);
+            node = new BTree(6, root, false);
+            node = new BTree(19, root, false);
+            node = new BTree(39, root, false);
+            node = new BTree(32, root, false);
+            node = new BTree(45, root, false);
 
             for (int i = 0; i < 30; ++i)
             {
